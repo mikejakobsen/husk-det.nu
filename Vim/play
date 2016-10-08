@@ -1,0 +1,5 @@
+The original vi is a visual extension of an editor called ex, itself an evolution of the editors em and ed. 
+The single-keystroke commands used in the visual mode of the ex 
+editor were mappings to something that could be done with the command mode of ex.
+It’s therefore not quite right to say that vi evolved from ex; they’re the same program,
+differing only by invocation name and default mode.
