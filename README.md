@@ -3,6 +3,8 @@
 
 My personal notes
 
+Hosted at http://husk-det.nu
+
 ![Mike](assets/mike.png)
 
 
