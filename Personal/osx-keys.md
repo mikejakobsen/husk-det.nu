@@ -18,6 +18,15 @@ Command+Shift+H     Home folder
 Command+Shift+C     Top-level/USB keys
 Command+Shift+A     Applications 
 
+| Hvad gør den?		  | Keystroke      |
+|---------------------|----------------|
+| Flyt til menulinje  | Ctr - $        |
+| Flyt tab punkt      | Ctr - Tab      |
+| Slutning af text  | Cmd - Down     |
+| Slutning af ord   | Option - Right |
+| Start af ord      | Option - Left  |
+| Delete right      | Fn - Delete    |
+| Slet ord          | Opt - Delete   |
 
 
 # Text
@@ -31,6 +40,8 @@ Command+Shift+A     Applications
 | Start af ord      | Option - Left  |
 | Delete right      | Fn - Delete    |
 | Slet ord          | Opt - Delete   |
+
+
 
 
 ![OSX Cheatsheet](http://atmac.org/contents/uploads/basic-keyboard-shortcuts-a4.pdf)

@@ -1,18 +1,43 @@
 # Mongoose
 
+## Basic Syntax
+
+```Javascript
+	var mongoose = require('mongoose');
+	mongoose.connect('mongodb://localhost/test');
+
+	var Cat = mongoose.model('Cat', { name: String });
+
+	var kitty = new Cat({ name: 'Zildjian' });
+	kitty.save(function (err) {
+	  if (err) {
+		console.log(err);
+	  } else {
+		console.log('meow');
+	  }
+	});
+```
+# Notes
+
 ### Mongo Excercise
 
-a) db.getCollection("retaurants").find({name:"Mackies"})
+Dummy data:
+https://raw.githubusercontent.com/mongodb/docs-assets/primer-dataset/primer-dataset.json
 
-b) db.getCollection("retaurants").find({cuisine:"Italian", "grades.score" : {$gt : 50}}).sort({"adress.zipcode" : 1})
+mongoimport --db dummy-data --collection restaurants --drop --file filename.json
 
-c) db.retaurants.update({"restaurant_id" : "55555555"}, {$push : {grades : {date : Date(), grade : "A", score : 666}}})
 
-d) db.retaurants.remove({cuisine : "Hamburgers", "grades.score" : {$lt : 1}})
+a) db.getCollection("restaurants").find({name:"Taste The Tropics Ice Cream"})
+
+b) db.getCollection("restaurants").find({cuisine:"Italian", "grades.score" : {$gt : 50}}).sort({"adress.zipcode" : 1})
+
+c) db.restaurants.update({"restaurant_id" : "55555555"}, {$push : {grades : {date : Date(), grade : "A", score : 666}}})
+
+d) db.restaurants.remove({cuisine : "Hamburgers", "grades.score" : {$lt : 1}})
 
 # Mongoose
 
-```
+```Javascript
 	var mongoose = require('mongoose');
 	var Schema = mongoose.Schema;
 ```
@@ -23,25 +48,23 @@ Read more: http://mongoosejs.com/docs/guide.html
 
 Snippet: https://github.com/nashio/vim-snippets
 
-# ODM tool
-
 A document in Mongoose is an instance of the model.
 
-´´
+```Javascript
 var Person = mongoose.model('Person', personSchema);
 
 	var bob = new Person({
 		firstName: 'Bob',
 		lastName: 'Doe'
 	});
-´´
+```
 
 A new is then defined - Blog is the modelname - blogSchema is the defined Schema
 
 var Blog = mongoose.model('Blog', blogSchema);
 // ready to go!
 
-´´
+```Javascript
 var mongoose = requre('mongoose');
 var Schema = mongoose.Schema;
 
@@ -55,9 +78,9 @@ var Schema = mongoose.Schema;
 		createdON: Date,
 		isActive: Boolean,
 	})
-´´
 
 var simpleSchema = new Schema({ fieldName: SchemaType});
+```
 
 ## Data types
 
@@ -74,7 +97,7 @@ var simpleSchema = new Schema({ fieldName: SchemaType});
 
 # Basic Schema
 
-```
+```Javascript
 	/* Example */
 
 	var mongoose = require('mongoose');
@@ -105,7 +128,7 @@ var simpleSchema = new Schema({ fieldName: SchemaType});
 
 # Model Example
 
-```
+```Javascript
 	/* Model Example - to remember the syntax */
 
 	var mongoose = require('mongoose');
@@ -140,7 +163,7 @@ var simpleSchema = new Schema({ fieldName: SchemaType});
 
 ## Find
 
-```
+```Javascript
 	// No callback - Deferrd execution
 	var query = Standup.find();
 
@@ -166,7 +189,7 @@ var simpleSchema = new Schema({ fieldName: SchemaType});
 ```
 ## Find One
 
-```
+```Javascript
 	// No callback - No Conditions
 
 	var query = Standup.findOne();
@@ -185,7 +208,7 @@ var simpleSchema = new Schema({ fieldName: SchemaType});
 
 ## Find By Id
 
-```
+```Javascript
 	// Search parameter saved as a variable
 	var id = '57e8f6e755ce973a83e1ef55';
 	var Standup = require('../models/standup.server.model.js');
@@ -211,7 +234,7 @@ Chain where methods together
 
 Where discount is greather then 10 and less then 20 - and zipCode is 12345
 
-```
+```Javascript
 	// Chain where methods together
 	// Where discount is greather then 10 and less then 20 - and zipCode is 12345
 	Customer.where('discount').gte(10).lt(20)
@@ -238,7 +261,7 @@ Then updating the found object
 
 Makes two calls to the db, first it finds the document, then updates it.
 
-```
+```Javascript
 	// Find by id - Id parameter
 	// Then updating the found object
 
@@ -258,7 +281,8 @@ Makes two calls to the db, first it finds the document, then updates it.
 Best practice
  Specity the query condition
  And then the updated info
-```
+
+```Javascript
 	var condition = { memberName: 'Mary' };
 	var update = { impediment: 'None - some shit' };
 
@@ -293,7 +317,7 @@ Required validation example
 
 Name should be a Sting, and is required
 
-```
+```Javascript
 
 	var customerSchema = new Schema({
 		name:       { type: String, required: true},
@@ -337,7 +361,7 @@ Name should be a Sting, and is required
 
 Customer must receive at least a 5% discount
 
-```
+```Javascript
 	var customerSchema = new Schema({
 		name: String
 		discount: { type: Number, min: 5 }
@@ -351,7 +375,7 @@ Customer must receive at least a 5% discount
 ```
 # Middleware
 
-```
+```Javascript
 	// Middleware flow
 
 	var personSchema = new Schema({
@@ -381,7 +405,7 @@ Save -> Defaults Applied -> Validation -> Error
 
 # Custom validation
 
-```
+```Javascript
 	// Custom validation - method signature = validation(obj, [ErrorMsg])
 
 	var sizeValidator = [

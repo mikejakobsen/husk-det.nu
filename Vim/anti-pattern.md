@@ -29,6 +29,9 @@ q: — Open with a command history from normal mode
 q/ — Open with a search history from normal mode (to search forward)
 q? — Open with a search history from normal mode (to search backward)
 Ctrl+F — Open with a command history from command mode
+Ctrl+w - Cycle open splits
+Ctrl+w + = -Make splits equal size
+gf - Go to definition
 
 ```
 
