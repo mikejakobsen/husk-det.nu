@@ -1,5 +1,5 @@
-# tmux cheatsheet
-Based on [tmux: Productive Mouse-Free Development](http://pragprog.com/book/bhtmux/tmux)
+# Tmux cheatsheet
+
 
 | Shell command | Description |
 | --- | ---- |
@@ -13,7 +13,7 @@ Based on [tmux: Productive Mouse-Free Development](http://pragprog.com/book/bhtm
 | `tmux has-session -t sessionname`| Returns 0 if session exists |
 
 
-PREFIX (`CTRL-b`) + … | Description | Custom mapping
+PREFIX (`CTRL-space`) + … | Description | Custom mapping
 --------------------- | ----------- | --------------
 `d`|Detach |
 `:`|Enter command mode |
@@ -23,7 +23,6 @@ PREFIX (`CTRL-b`) + … | Description | Custom mapping
 `)`| Switch to previous session |
 `s`| Show session menu |
 `$`| Rename session |
-`P`| Toggle logging output to ~/*window_name*.log|yes
 `ESCAPE`|Enter copy mode |
 `p`|Paste from buffer|
 `CTRL-c`|Copy buffer to MAC clipboard |
@@ -31,12 +30,12 @@ PREFIX (`CTRL-b`) + … | Description | Custom mapping
 
 ## Windows
 
-PREFIX (`CTRL-b`) + … | Description | Custom mapping
+PREFIX (`CTRL-space`) + … | Description | Custom mapping
 --------------------- | ----------- | --------------
 `c`| Create window |
 `,`| Rename window |
 `n`|Go to next window |
-`CTRL-h`, `CTRL-l`|Select next/previous window|yes
+`CTRL-n`, `CTRL-p`|Select next/previous window|yes
 `0`|Go to window no `0` |
 `1`|Go to window no `1` |
 `f`|Find window by name |
@@ -47,10 +46,9 @@ PREFIX (`CTRL-b`) + … | Description | Custom mapping
 
 ## Panes
 
-PREFIX (`CTRL-b`) + … | Description | Custom mapping
+PREFIX (`CTRL-space`) + … | Description | Custom mapping
 --------------------- | ----------- | --------------
 `%`|Split horizontally |
-`PIPE`|Split horizontally | yes
 `"`|Split vertically |
 `-` | Split vertically|yes
 `o`|Cycle through panes |
@@ -60,7 +58,6 @@ PREFIX (`CTRL-b`) + … | Description | Custom mapping
 `!`| Move active pane to a new window |
 `z`| Zoom pane | tmux 1.8
 `UP`| Maximize pane | yes
-`DOWN` | Redo maximize pane | yes
 `x`|Kill pane (after confirmation) |
 
 ## Command mode
