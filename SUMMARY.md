@@ -79,7 +79,7 @@
 	* [The Awful parts](js/the_awful_parts.md)
 	* [The Bad parts](js/the_bad_parts.md)
 	* [JSLint](js/jslint.md)
-	* [MeanStackProject](js/meanStackProject.md)	
+	* [MeanStackProject](js/meanStackProject.md)
 * [Git](Git/getting-started.md)
 	* [Git Basic](Git/basic.md)
 	* [Git Clone](Git/git-clone.md)
@@ -110,6 +110,7 @@
 	* [OSX Keys](Personal/osx-keys.md)
 	* [ZSH](Personal/zsh.md)
 	* [FZF](Personal/fzf.md)
+	* [Tmux](Personal/tmux.md)
 ### Today i learned
 * [Spotify Terminal](Personal/spotify-terminal.md)
 * [Terminal size](Personal/resize.md)
