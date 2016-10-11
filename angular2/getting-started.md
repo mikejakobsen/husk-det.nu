@@ -1,12 +1,16 @@
+# AngularJs 2
+
 Get started with Angular Material 2 using the Angular CLI.
 
-## Install the CLI
+[AngularJs](../assets/angular2.png)
+
+### Install the CLI
  
  ```bash
  npm install -g angular-cli
  ```
  
-## Create a new project
+### Create a new project
  
  ```bash
  ng new my-project
@@ -17,6 +21,7 @@ The AngularJS framework consists of several libraries, some of them core and som
 You write Angular applications by composing HTML templates with Angularized markup, writing component classes to manage those templates, adding application logic in services, and boxing components and services in modules.
 
 ![AngularJs](https://angular.io/resources/images/devguide/architecture/overview2.png)
+
 
 
 ## Modules
@@ -112,6 +117,8 @@ Apply other metadata decorators in a similar fashion to guide Angular behavior. 
 ## Data Binding
 
 Without a framework, you would be responsible for pushing data values into the HTML controls and turning user responses into actions and value updates. Fu**ing Old school..
+
+Data from the class to the template and vice versa.
 
 ![img](https://angular.io/resources/images/devguide/architecture/databinding.png)
 
