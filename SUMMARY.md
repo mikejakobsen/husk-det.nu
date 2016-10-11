@@ -63,6 +63,7 @@
 * [Mongoose](mongoose/getting-started.md)
 * [ES6](ES6/es6.md)
 * [TypeScript](js/typescript.md)
+* [AngularJs 2](angular2/getting-started.md)
   	* [Scope](ES6/scope.md)
   	* [Modules](ES6/modules.md)
   	* [Asynchronous](ES6/asynchronous.md)

@@ -1,5 +1,8 @@
 # TypeScript
 
+[Slideshow](../assets/typescript-powerpoint.pdf)
+
+
 | Keyword          | Hva' gør den?                                          |
 |------------------|--------------------------------------------------------|
 | class            | Container for members such as properties and functions |
@@ -15,6 +18,10 @@
 | =>               | Arrow syntax used with definition and functions        |
 | < typename>       | <> characters use to cast/convert between types        |
 | :                | Separator between variable/parameter names and types   |
+
+TypeScript is transpiled into JavaScript.
+
+Transpiling is a specific term for taking source code written in one language and transforming into another language that has a similar level of abstraction.
 
 ## Code Hierarchy
 
