@@ -132,10 +132,6 @@ Map ctrl-j d to run system command /tmp/x.py
     :imap <C-j>d <C-r>=system('/tmp/x.py')<CR>
 
 
-#### Toggle Spellcheck
-
-    :map <F5> :setlocal spell! spelllang=en_us<CR>
-
 
 #### Customizations
 
