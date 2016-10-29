@@ -60,6 +60,7 @@
 	* [Crow' Foot Notation](DB/SQL/crow-foot-notation.md)
 	* [Chen Notation](DB/SQL/chen.md)
 	* [Questions/Pensum](DB/SQL/questions.md)
+* [Drupal](Drupal/basic-stuff.md)
 * [Mongoose](mongoose/getting-started.md)
 * [AngularJs 2](angular2/getting-started.md)
 	* [Interface](angular2/interface.md)
