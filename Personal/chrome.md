@@ -496,16 +496,3 @@ Change the style of the search marks and cursor:
 
     npm install
     ./node_modules/gulp/bin/gulp.js
-
-## Credits
-
-* [jQuery](https://github.com/jquery/jquery), for clean coding.
-* [TRIE](https://github.com/mikedeboer/trie), finally replaced by my own simple implementation for less memory usage and better performance.
-* [ACE vim editor](https://github.com/ajaxorg/ace), for vim editor.
-* [markdown parser](https://github.com/chjj/marked), for markdown parser.
-* [vimium](https://github.com/philc/vimium), for the days without this extension.
-* [cVim](https://github.com/1995eaton/chromium-vim), for the days without this extension.
-
-## License
-
-MIT License
