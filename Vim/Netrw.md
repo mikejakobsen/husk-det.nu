@@ -1,11 +1,10 @@
 #Netrw
 
-I just started using Netrw, in stead of nerdtree.
+One of the first plugins every VIM user install is NerdTree to get the IDE feeling.
+
+But VIM has a very solid file explorer already build in.
 
 I'm currently trying to minimize the amount of plugins i'm using, and make my vim seems less bloated.
-
-So switching from Nerdtree to Netrw, which is all ready build in to vim. Seems like a natural decision.
-
 
 
 | lazy 	| mnemonic  	| open file explorer                             	|
@@ -37,3 +36,6 @@ So switching from Nerdtree to Netrw, which is all ready build in to vim. Seems l
     let g:netrw_bufsettings = 'noma nomod nu nobl nowrap ro rnu'  " --> I want line numbers on the netrw buffer
     nnoremap <silent> <leader>ne :Lexplore<cr>
     nnoremap <silent> <leader>ns :Sexplore<cr>
+
+Source: http://husk-det.nu/Vim/Netrw.html
+

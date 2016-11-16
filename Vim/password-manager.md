@@ -1,6 +1,8 @@
 # Password manager
 
-In my pursuit of a secure computer, i'm hugh fan of 1Password for Mac. 
+In my pursuit of a secure computer, i'm hugh fan of 1Password for Mac. Before i began using 1Password, i had the same 8 digit password on every site.
+
+But why not use VIM? The main problem and advantage with 1Password, is that the passwords are stored in a plain file on your own computer. 
 
 
 Remember, Vim has an option that enables the encryption of plain text files. But its default encryption mode pkzip is not that secure and can be easily bruteforced. So the first thing you need to do is to set the crypto algorithm to something more secure. Add this to your .vimrc :

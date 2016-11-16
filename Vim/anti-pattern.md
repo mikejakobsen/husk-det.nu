@@ -1,8 +1,13 @@
 # Vim anti-patterns
 
+One of the main reasons why VIM has been so popular through the years, is the amazing enhancement it levers to the users workflow, when he finally masters the editor to it's full potential.
+
+For a developer, nearly everytime you reach for your mouse, that's an anti-pattern. Nearly every time, you take your hands off the home row, that's an anti pattern. It might only take a couple of second, but if you continue to do so through out the day, those seconds amounts to a lot off time. Here i collected, some of the best tips to enhance your VIM workflow. Some of them might be basic, but there all worth being mentioned.
+
+This text is based on these two links.
+
 Read: https://sanctum.geek.nz/arabesque/vim-anti-patterns/
 
-Stuff i really gotta get used to.
 
 [Moving](http://www.benorenstein.com/blog/jumping-long-distances-in-vim)
 
@@ -97,3 +102,17 @@ Import etx
 Ctrl+x Ctrl+f
 
 Add `/` for absolute path
+
+## Working with files
+
+
+* `gof`: **Go** to the current file's directory in **Finder** 
+    * `goF` (uppercase `F`) opens the current *working directory* (`:pwd`)
+* `got`: **Go** to the current file's directory in a **Tmux Split**
+    * `goT` (uppercase `T`) opens the current *working directory* (`:pwd`)
+
+## Read More
+
+Wanna read more?
+
+http://vimuniversity.com/samples/jumping-long-distances
