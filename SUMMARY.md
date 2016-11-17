@@ -117,6 +117,7 @@
 	* [Vim Macro](Vim/macro.md)
 	* [Vim Marks](Vim/marks.md)
 	* [Gifs](Vim/gif/gif.md)
+	* [Vim & Tmux](Personal/tmux-runner.md)
 * [Shell](Personal/shell.md)
 	* [OSX Keys](Personal/osx-keys.md)
 	* [ZSH](Personal/zsh.md)
