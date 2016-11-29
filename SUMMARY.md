@@ -129,6 +129,7 @@
 * [Make Chrome Great Again](Personal/chrome.md)
 * [Spam Free Facebook](Personal/quiet-facebook.md)
 * [Commandline Notes](Personal/commandline.md)
+* [Git Commit Emoji](Personal/gitmoji.md)
 * [FZF](Personal/fzf.md)
 * [OSX Shortcuts](Personal/osx-keys.md)
 * [Iterm/Terminal Shortcuts](Personal/iterm.md)
