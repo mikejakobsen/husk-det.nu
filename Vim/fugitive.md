@@ -2,45 +2,48 @@
 
 http://media.vimcasts.org/videos/32/fugitive_2.m4v
 
-### Git status
+comma + g? to show all git commands
+```
+nnoremap <localleader>g? :map <localleader>g<cr>
+```
 
-Mapped to **leader+gs**
+## Mappings
 
-The :Gstatus command opens a status window. The contents closely resemble the output from running git status in the shell, but fugitive makes the window interactive. You can jump directly between files with ctrl-n and ctrl-p.
-
-	| Command | Effect                                |
-	|---------|---------------------------------------|
-	| -       | Add/reset file                        |
-	| Enter   | Open current file                     |
-	| p       | run `git add –patch` for current file |
-	| c       | invoke :Gcommit                       |
-
-### Git index
-
-The git index is where you put changes that you want to be included in the next commit.
-
-To see the **Git saved** version of curent file
-
-	leader+ge
-
-
-### Git diff
-
-To see changes to current file, compared to Gits version.
-
-	leader+gd
+| Mapping  |  Function    | Description         |
+|----------|--------------|----------------------|
+| ga       | Git add      | Add the file         |
+| gs       | Git status   | Opens git status     |
+| gc       | Git commit   | Git commit basic     |
+| gt       | Git commit   | Git commit with diff |
+| gd       | Git diff     | Git diff             |
+| ge       | Git edit     |                      |
+| gr       | Git read     |                      |
+| gw       | Git write    |                      |
+| gl       | Git log      | See the file in log  |
+| gg       | Git gutter   | Toggle gitgutter     |
+| gb       | Git branch   |                      |
+| gp       | Git grep     |                      |
+| go       | Git checkout |                      |
+| gps      | Git push     |                      |
+| gpl      | Git pull     |                      |
 
 
-### Mappings
+## Normal mode
 
-		<leader>dg :diffget<CR>
-		<leader>dp :diffput<CR>
+| Mapping | Function | Description |
+|---------|----------|-------------|
+| dp      | :diffput | Diff put    |
+| do      | :diffget | Diff get    |
 
-		Git add current file
+## Fugitive Mappings
 
-		<leader>ga :Git add %:p<CR><CR>
-		<leader>gs :Gstatus<CR>
-		<leader>gc :Gcommit -v -q<CR>
-		<leader>gd :Gdiff<CR>
-		<leader>ge :Gedit :%<CR>
-
+| Mapping | Function   |
+|---------|------------|
+| gsl     | Git log    |
+| gsd     | Git diff   |
+| gsb     | Git blame  |
+| gsw     | Git write  |
+| gsc     | Git commit |
+| gst     | git status |
+| gscd    |            |
+| gsld    |            |
