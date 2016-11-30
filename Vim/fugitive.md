@@ -47,3 +47,19 @@ nnoremap <localleader>g? :map <localleader>g<cr>
 | gst     | git status |
 | gscd    |            |
 | gsld    |            |
+
+## GitGutter
+
+Mostly used when i debug.
+
+Hunk is the next part that differ.
+
+| Mapping |  Function   |
+|---------|-------------|
+| [h      | Prev hunk   |
+| ]h      | Next hunk   |
+| hs      | Stage hunk  |
+| hr      | Revert hunk |
+
+
+

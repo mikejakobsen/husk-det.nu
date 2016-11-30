@@ -109,7 +109,6 @@
 	* [EasyMotion](Vim/easymotion.md)
 	* [Insert Mode](Vim/insert-mode.md)
 	* [Currently Learning Vim](Vim/advanced.md)
-	* [File Explorer](Vim/Netrw.md)
 	* [Password manager](Vim/password-manager.md)
 	* [Vim Surround](Vim/vim-surround.md)
 	* [Vim and Git](Vim/fugitive.md)
