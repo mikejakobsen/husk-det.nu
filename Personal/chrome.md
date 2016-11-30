@@ -29,9 +29,7 @@ Surfingkeys is created with all settings described in Javascript, so it's easy f
 * [VIM editor](#vim-editor)
 * [Dot to repeat previous action](#dot-to-repeat-previous-action)
 * [Markdown preview](#markdown-preview)
-* [Edit your own settings](#edit-your-own-settings)
-* [Build](#build)
-* [License](#license)
+* [Security](#security)
 
 ## Feature list
 * All settings are set up within a javascript file, which makes it easy to create mapping to user customized function.
@@ -492,7 +490,18 @@ Change the style of the search marks and cursor:
     Visual.style('marks', 'background-color: #89a1e2;');
     Visual.style('cursor', 'background-color: #9065b7;');
 
-## Build
+## Security
 
-    npm install
-    ./node_modules/gulp/bin/gulp.js
+The Web browser poses the largest security and privacy risk, as its fundamental job is to download and execute untrusted code from the Internet.
+
+Add [PDF viewer](http://0xdabbad00.com/2013/01/13/most-secure-pdf-viewer-chrome-pdf-viewer/).
+
+Create at least three profiles, one for browsing **trusted** Web sites (email, banking), another for **mostly trusted** Web sites (link aggregators, news sites), and a third for a completely **cookie-less** and **script-less** experience.
+
+* One profile **without cookies or Javascript** enabled (e.g., turned off in `chrome://settings/content`) which should be the preferred profile to visiting untrusted Web sites. However, many pages will not load at all without Javascript enabled.
+
+* One profile with [uMatrix](https://github.com/gorhill/uMatrix) or [uBlock Origin](https://github.com/gorhill/uBlock)
+(or both). Use this profile for visiting **mostly trusted** Web sites. Take time to learn how these firewall extensions
+work. Other frequently recommended extensions are [Privacy Badger](https://www.eff.org/privacybadger),
+[HTTPSEverywhere](https://www.eff.org/https-everywhere) and [CertPatrol](http://patrol.psyced.org/) (Firefox only).
+
