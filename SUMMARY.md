@@ -112,6 +112,7 @@
 	* [Password manager](Vim/password-manager.md)
 	* [Vim Surround](Vim/vim-surround.md)
 	* [Vim and Git](Vim/fugitive.md)
+	* [Vim Gist](Vim/gist.md)
 	* [Vim Tips](Vim/vim-tips.md)
 	* [Vim Macro](Vim/macro.md)
 	* [Vim Marks](Vim/marks.md)
