@@ -86,12 +86,9 @@ q       // quit
 
 ### YouTube support
 
-We had to drop direct YouTube support for now since google changed the chromecast YouTube API.
-However, there is a nice workaround in combination with the tool [youtube-dl](https://github.com/rg3/youtube-dl):
+Stream YouTube videos. There is a nice workaround in combination with the tool [youtube-dl](https://github.com/rg3/youtube-dl):
 
 `youtube-dl -o - https://youtu.be/BaW_jenozKc | castnow --quiet -`
-
-
 
 ### installation
 

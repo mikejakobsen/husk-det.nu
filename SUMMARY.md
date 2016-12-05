@@ -73,6 +73,7 @@
 	* [Interface](angular2/interface.md)
 * [TypeScript](js/typescript.md)
 * [ES6](ES6/es6.md)
+  	* [Unit test (Mocha/Chai)](js/unit-testing.md)
   	* [Scope](ES6/scope.md)
   	* [Modules](ES6/modules.md)
   	* [Asynchronous](ES6/asynchronous.md)
