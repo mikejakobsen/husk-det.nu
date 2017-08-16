@@ -1,0 +1,2583 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Basic MongoDB · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="chapter2.html" />
+    
+    
+    <link rel="prev" href="getting_started.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../../interface-design/interface.html">
+            
+                <a href="../../interface-design/interface.html">
+            
+                    
+                    Interface Design
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../../interface-design/interface-design.html">
+            
+                <a href="../../interface-design/interface-design.html">
+            
+                    
+                    First Lecture
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../../interface-design/chapter1.html">
+            
+                <a href="../../interface-design/chapter1.html">
+            
+                    
+                    First Chapter/Design Research
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../../interface-design/chapter2.html">
+            
+                <a href="../../interface-design/chapter2.html">
+            
+                    
+                    Second Chapter/Kvali/Kvantitativ
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="../../interface-design/chapter3.html">
+            
+                <a href="../../interface-design/chapter3.html">
+            
+                    
+                    Third Chapter/Personas/Goals
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="../../interface-design/chapter4.html">
+            
+                <a href="../../interface-design/chapter4.html">
+            
+                    
+                    Fourth Chapter
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6" data-path="../../interface-design/chapter5.html">
+            
+                <a href="../../interface-design/chapter5.html">
+            
+                    
+                    Fifth Chapter
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7" data-path="../../interface-design/chapter6.html">
+            
+                <a href="../../interface-design/chapter6.html">
+            
+                    
+                    Sixth Chapter
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8" data-path="../../interface-design/chapter7.html">
+            
+                <a href="../../interface-design/chapter7.html">
+            
+                    
+                    Seventh Chapter
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.8.1" data-path="../../interface-design/user-centered-design.html">
+            
+                <a href="../../interface-design/user-centered-design.html">
+            
+                    
+                    User Centered Design
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8.2" data-path="../../interface-design/human-centered_design.html">
+            
+                <a href="../../interface-design/human-centered_design.html">
+            
+                    
+                    Human Centered Design
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8.3" data-path="../../interface-design/horizontal-vertical.html">
+            
+                <a href="../../interface-design/horizontal-vertical.html">
+            
+                    
+                    Horizontal-vertical
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8.4" data-path="../../interface-design/the-reflective-interaction-designer.html">
+            
+                <a href="../../interface-design/the-reflective-interaction-designer.html">
+            
+                    
+                    Interaction Designer
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8.5" data-path="../../interface-design/why-webdesign-is-dead.html">
+            
+                <a href="../../interface-design/why-webdesign-is-dead.html">
+            
+                    
+                    Why webdesign is dead vs. not
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8.6" data-path="../../interface-design/personas.html">
+            
+                <a href="../../interface-design/personas.html">
+            
+                    
+                    Personas
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8.7" data-path="../../interface-design/competitor-analysis.html">
+            
+                <a href="../../interface-design/competitor-analysis.html">
+            
+                    
+                    Competitor-analysis
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8.8" data-path="../../interface-design/user-research.html">
+            
+                <a href="../../interface-design/user-research.html">
+            
+                    
+                    User research
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8.9" data-path="../../interface-design/journey-maps.html">
+            
+                <a href="../../interface-design/journey-maps.html">
+            
+                    
+                    Journey Maps
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8.10" data-path="../../interface-design/metaphors.html">
+            
+                <a href="../../interface-design/metaphors.html">
+            
+                    
+                    Metaforer
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8.11" data-path="../../interface-design/scenarios-in-design.html">
+            
+                <a href="../../interface-design/scenarios-in-design.html">
+            
+                    
+                    Scenarios
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8.12" data-path="../../interface-design/content.html">
+            
+                <a href="../../interface-design/content.html">
+            
+                    
+                    Content/Infographic
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8.13" data-path="../../interface-design/ux.html">
+            
+                <a href="../../interface-design/ux.html">
+            
+                    
+                    UI/GUI/UX
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8.14" data-path="../../interface-design/usability-heuristics.html">
+            
+                <a href="../../interface-design/usability-heuristics.html">
+            
+                    
+                    Usability Heuristics
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.8.14.1" data-path="../../interface-design/wireframe.html">
+            
+                <a href="../../interface-design/wireframe.html">
+            
+                    
+                    Wireframe
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8.14.2" data-path="../../interface-design/mock-ups.html">
+            
+                <a href="../../interface-design/mock-ups.html">
+            
+                    
+                    Mock-up
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8.14.3" data-path="../../interface-design/prototype.html">
+            
+                <a href="../../interface-design/prototype.html">
+            
+                    
+                    Prototype
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8.15" data-path="../../interface-design/questionss.html">
+            
+                <a href="../../interface-design/questionss.html">
+            
+                    
+                    Recap
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.9" data-path="../../interface-design/thoughtful-interaction-design.html">
+            
+                <a href="../../interface-design/thoughtful-interaction-design.html">
+            
+                    
+                    Thoughtfull interaktion design / Anden bog
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../sql-mindset.html">
+            
+                <a href="../sql-mindset.html">
+            
+                    
+                    SQL Mindset
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="basic-nosql.html">
+            
+                <a href="basic-nosql.html">
+            
+                    
+                    NoSQL/JSON
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="mongo-notes.html">
+            
+                <a href="mongo-notes.html">
+            
+                    
+                    MongoDB Walkthrough
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="aggregate-data-models.html">
+            
+                <a href="aggregate-data-models.html">
+            
+                    
+                    Aggregate Data Models
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="getting_started.html">
+            
+                <a href="getting_started.html">
+            
+                    
+                    MongoDB
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.6.2" data-path="chapter1.html">
+            
+                <a href="chapter1.html">
+            
+                    
+                    Basic MongoDB
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="chapter2.html">
+            
+                <a href="chapter2.html">
+            
+                    
+                    Updating - MongoDB
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4" data-path="chapter3.html">
+            
+                <a href="chapter3.html">
+            
+                    
+                    Query/Find - MongoDB
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.5" data-path="chapter4.html">
+            
+                <a href="chapter4.html">
+            
+                    
+                    Data Modeling - MongoDB
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.6" data-path="chapter5.html">
+            
+                <a href="chapter5.html">
+            
+                    
+                    When to use - MongoDB
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.7" data-path="chapter6.html">
+            
+                <a href="chapter6.html">
+            
+                    
+                    Aggregating
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.8" data-path="chapter7.html">
+            
+                <a href="chapter7.html">
+            
+                    
+                    Performance and tools - MongoDb
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.9" data-path="class.html">
+            
+                <a href="class.html">
+            
+                    
+                    MongoDB Excercise from class
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../SQL/getting-started.html">
+            
+                <a href="../SQL/getting-started.html">
+            
+                    
+                    DB/SQL
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="../SQL/basic-sql.html">
+            
+                <a href="../SQL/basic-sql.html">
+            
+                    
+                    Basic T-SQL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="../SQL/advanced-sql.html">
+            
+                <a href="../SQL/advanced-sql.html">
+            
+                    
+                    Advanced T-SQL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3" data-path="../SQL/sql-notes.html">
+            
+                <a href="../SQL/sql-notes.html">
+            
+                    
+                    T-SQL Notes
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.4" data-path="../SQL/aggregates.html">
+            
+                <a href="../SQL/aggregates.html">
+            
+                    
+                    Aggregates/T-SQL functions
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.5" data-path="../SQL/functions.html">
+            
+                <a href="../SQL/functions.html">
+            
+                    
+                    Functions T-SQL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.6" data-path="../SQL/transactions.html">
+            
+                <a href="../SQL/transactions.html">
+            
+                    
+                    Transactions T-SQL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.7" data-path="../SQL/create-table.html">
+            
+                <a href="../SQL/create-table.html">
+            
+                    
+                    Create Table(Pivot)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.8" data-path="../SQL/views.html">
+            
+                <a href="../SQL/views.html">
+            
+                    
+                    Views
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.9" data-path="../SQL/partial-match.html">
+            
+                <a href="../SQL/partial-match.html">
+            
+                    
+                    Partial Match/Search
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.10" data-path="../data-modeling.html">
+            
+                <a href="../data-modeling.html">
+            
+                    
+                    Data Modeling
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.11" data-path="../normalisation.html">
+            
+                <a href="../normalisation.html">
+            
+                    
+                    Normalisation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.12" data-path="../SQL/joins.html">
+            
+                <a href="../SQL/joins.html">
+            
+                    
+                    Joins
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.13" data-path="../SQL/crossvsinner.html">
+            
+                <a href="../SQL/crossvsinner.html">
+            
+                    
+                    Cross Vs Inner
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.14" data-path="../xml.html">
+            
+                <a href="../xml.html">
+            
+                    
+                    XML
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.15" data-path="../json.html">
+            
+                <a href="../json.html">
+            
+                    
+                    JSON
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.16" data-path="../SQL/crow-foot-notation.html">
+            
+                <a href="../SQL/crow-foot-notation.html">
+            
+                    
+                    Crow' Foot Notation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.17" data-path="../SQL/chen.md">
+            
+                <span>
+            
+                    
+                    Chen Notation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.18" data-path="../SQL/questions.html">
+            
+                <a href="../SQL/questions.html">
+            
+                    
+                    Questions/Pensum
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../../Drupal/basic-stuff.html">
+            
+                <a href="../../Drupal/basic-stuff.html">
+            
+                    
+                    Drupal
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="../../Drupal/theme.html">
+            
+                <a href="../../Drupal/theme.html">
+            
+                    
+                    Theme
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2" data-path="../../Drupal/content-types.md">
+            
+                <span>
+            
+                    
+                    Content Types
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.3" data-path="../../Drupal/taxonomy.html">
+            
+                <a href="../../Drupal/taxonomy.html">
+            
+                    
+                    Taxonomy
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../../Umbraco/document-type.html">
+            
+                <a href="../../Umbraco/document-type.html">
+            
+                    
+                    Umbraco
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.1" data-path="../../Umbraco/document-type.html">
+            
+                <a href="../../Umbraco/document-type.html">
+            
+                    
+                    Umbraco Doc Type
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../../mongoose/getting-started.html">
+            
+                <a href="../../mongoose/getting-started.html">
+            
+                    
+                    Mongoose
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="../../meteor/getting-started.html">
+            
+                <a href="../../meteor/getting-started.html">
+            
+                    
+                    Meteor
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.11.1" data-path="../../meteor/basic-stuff.html">
+            
+                <a href="../../meteor/basic-stuff.html">
+            
+                    
+                    Basic Stuff
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="../../wordpress/getting_started/101.html">
+            
+                <a href="../../wordpress/getting_started/101.html">
+            
+                    
+                    WordPress
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.12.1" data-path="../../wordpress/code_style_guide/101.html">
+            
+                <a href="../../wordpress/code_style_guide/101.html">
+            
+                    
+                    Code Style Guide
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.12.1.1" data-path="../../wordpress/debugging/101.html">
+            
+                <a href="../../wordpress/debugging/101.html">
+            
+                    
+                    Debugging
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.2" data-path="../../wordpress/debugging/errorlogging.html">
+            
+                <a href="../../wordpress/debugging/errorlogging.html">
+            
+                    
+                    Error Logging
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.3" data-path="../../wordpress/debugging/handlingerrors.html">
+            
+                <a href="../../wordpress/debugging/handlingerrors.html">
+            
+                    
+                    Handling Errors
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.4" data-path="../../wordpress/debugging/tools.html">
+            
+                <a href="../../wordpress/debugging/tools.html">
+            
+                    
+                    Tools
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.5" data-path="../../wordpress/debugging/wp-configphp.html">
+            
+                <a href="../../wordpress/debugging/wp-configphp.html">
+            
+                    
+                    wp-config.php
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.12.5.1" data-path="../../wordpress/core/101.html">
+            
+                <a href="../../wordpress/core/101.html">
+            
+                    
+                    Core
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.5.2" data-path="../../wordpress/post_types/101.html">
+            
+                <a href="../../wordpress/post_types/101.html">
+            
+                    
+                    Data
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.5.3" data-path="../../wordpress/queries/101.html">
+            
+                <a href="../../wordpress/queries/101.html">
+            
+                    
+                    Queries
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.6" data-path="../../wordpress/queries/post_queries.html">
+            
+                <a href="../../wordpress/queries/post_queries.html">
+            
+                    
+                    Post Queries
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.7" data-path="../../wordpress/queries/taxonomy_and_term_queries.html">
+            
+                <a href="../../wordpress/queries/taxonomy_and_term_queries.html">
+            
+                    
+                    Taxonomy and Term Queries
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.8" data-path="../../wordpress/queries/comment_queries.html">
+            
+                <a href="../../wordpress/queries/comment_queries.html">
+            
+                    
+                    Comment Queries
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.9" data-path="../../wordpress/queries/user_queries.html">
+            
+                <a href="../../wordpress/queries/user_queries.html">
+            
+                    
+                    User Queries
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.10" data-path="../../wordpress/queries/sql.html">
+            
+                <a href="../../wordpress/queries/sql.html">
+            
+                    
+                    SQL
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.12.10.1" data-path="../../wordpress/routing/101.html">
+            
+                <a href="../../wordpress/routing/101.html">
+            
+                    
+                    Routing
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.11" data-path="../../wordpress/routing/the_main_loop_&_template_loading.html">
+            
+                <a href="../../wordpress/routing/the_main_loop_&_template_loading.html">
+            
+                    
+                    The Main Loop & Template Loading
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.12" data-path="../../wordpress/routing/where_query_variables_come_from.html">
+            
+                <a href="../../wordpress/routing/where_query_variables_come_from.html">
+            
+                    
+                    Where Query Variables Come From
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.13" data-path="../../wordpress/routing/rewrite_rules.html">
+            
+                <a href="../../wordpress/routing/rewrite_rules.html">
+            
+                    
+                    Rewrite Rules
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.14" data-path="../../wordpress/routing/clashes,_slugs,_&_debugging.html">
+            
+                <a href="../../wordpress/routing/clashes,_slugs,_&_debugging.html">
+            
+                    
+                    Clashes, Slugs, & Debugging
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.15" data-path="../../wordpress/templates/README.md">
+            
+                <span>
+            
+                    
+                    Templates
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.16" data-path="../../wordpress/javascript/README.md">
+            
+                <span>
+            
+                    
+                    JavaScript
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.17" data-path="../../wordpress/widgets/README.md">
+            
+                <span>
+            
+                    
+                    Widgets
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.18" data-path="../../wordpress/i18n/README.md">
+            
+                <span>
+            
+                    
+                    I18n
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.19" data-path="../../wordpress/multisite/README.md">
+            
+                <span>
+            
+                    
+                    Multisite
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.20" data-path="../../wordpress/testing/README.md">
+            
+                <span>
+            
+                    
+                    Testing
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.21" data-path="../../wordpress/testing/theory/unit_testing.html">
+            
+                <a href="../../wordpress/testing/theory/unit_testing.html">
+            
+                    
+                    Unit Testing
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.22" data-path="../../wordpress/testing/theory/behaviour_testing.html">
+            
+                <a href="../../wordpress/testing/theory/behaviour_testing.html">
+            
+                    
+                    Behaviour Testing
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.23" data-path="../../wordpress/testing/tdd.html">
+            
+                <a href="../../wordpress/testing/tdd.html">
+            
+                    
+                    Test Driven Development
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.24" data-path="../../wordpress/testing/wp_unittestcase.html">
+            
+                <a href="../../wordpress/testing/wp_unittestcase.html">
+            
+                    
+                    WP_UnitTestCase
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.12.24.1" data-path="../../wordpress/servers_and_deployment/README.md">
+            
+                <span>
+            
+                    
+                    Servers And Deployment
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.25" data-path="../../wordpress/servers_and_deployment/wp_cli.html">
+            
+                <a href="../../wordpress/servers_and_deployment/wp_cli.html">
+            
+                    
+                    WP CLI
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.26" data-path="../../wordpress/servers_and_deployment/migrations.html">
+            
+                <a href="../../wordpress/servers_and_deployment/migrations.html">
+            
+                    
+                    Migrations
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.12.26.1" data-path="../../wordpress/ssl/101.html">
+            
+                <a href="../../wordpress/ssl/101.html">
+            
+                    
+                    Security
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="../../angular2/getting-started.html">
+            
+                <a href="../../angular2/getting-started.html">
+            
+                    
+                    AngularJs 2
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.13.1" data-path="../../angular2/interface.html">
+            
+                <a href="../../angular2/interface.html">
+            
+                    
+                    Interface
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="../../js/typescript.html">
+            
+                <a href="../../js/typescript.html">
+            
+                    
+                    TypeScript
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="../../ES6/es6.html">
+            
+                <a href="../../ES6/es6.html">
+            
+                    
+                    ES6
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" data-path="../../js/chapter1.md">
+            
+                <span>
+            
+                    
+                    Javascript The Good parts
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.16.1" data-path="../../js/good-parts.html">
+            
+                <a href="../../js/good-parts.html">
+            
+                    
+                    Good Parts
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16.2" data-path="../../js/grammar.html">
+            
+                <a href="../../js/grammar.html">
+            
+                    
+                    Grammar
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16.3" data-path="../../js/objects.html">
+            
+                <a href="../../js/objects.html">
+            
+                    
+                    Objects
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16.4" data-path="../../js/js-functions.html">
+            
+                <a href="../../js/js-functions.html">
+            
+                    
+                    Functions
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16.5" data-path="../../js/inheritance.html">
+            
+                <a href="../../js/inheritance.html">
+            
+                    
+                    Inheritance
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16.6" data-path="../../js/arrays.html">
+            
+                <a href="../../js/arrays.html">
+            
+                    
+                    Arrays
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16.7" data-path="../../js/regular_expressions.html">
+            
+                <a href="../../js/regular_expressions.html">
+            
+                    
+                    Regular Expressions
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16.8" data-path="../../js/methods.html">
+            
+                <a href="../../js/methods.html">
+            
+                    
+                    Methods
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16.9" data-path="../../js/Style.html">
+            
+                <a href="../../js/Style.html">
+            
+                    
+                    Style
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16.10" data-path="../../js/the_awful_parts.html">
+            
+                <a href="../../js/the_awful_parts.html">
+            
+                    
+                    The Awful parts
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16.11" data-path="../../js/the_bad_parts.html">
+            
+                <a href="../../js/the_bad_parts.html">
+            
+                    
+                    The Bad parts
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16.12" data-path="../../js/jslint.html">
+            
+                <a href="../../js/jslint.html">
+            
+                    
+                    JSLint
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16.13" data-path="../../js/meanStackProject.html">
+            
+                <a href="../../js/meanStackProject.html">
+            
+                    
+                    MeanStackProject
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17" data-path="../../Git/getting-started.html">
+            
+                <a href="../../Git/getting-started.html">
+            
+                    
+                    Git
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.17.1" data-path="../../Git/basic.html">
+            
+                <a href="../../Git/basic.html">
+            
+                    
+                    Git Basic
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17.2" data-path="../../Git/git-clone.html">
+            
+                <a href="../../Git/git-clone.html">
+            
+                    
+                    Git Clone
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17.3" data-path="../../Git/git-status.html">
+            
+                <a href="../../Git/git-status.html">
+            
+                    
+                    Git Status
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17.4" data-path="../../Git/git-stage.html">
+            
+                <a href="../../Git/git-stage.html">
+            
+                    
+                    Tracking new files 
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17.5" data-path="../../Git/git-ignore.html">
+            
+                <a href="../../Git/git-ignore.html">
+            
+                    
+                    Git Ignore
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18" data-path="../../markdown/titles.html">
+            
+                <a href="../../markdown/titles.html">
+            
+                    
+                    Markdown
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.18.1" data-path="../../markdown/links.html">
+            
+                <a href="../../markdown/links.html">
+            
+                    
+                    Links
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18.2" data-path="../../markdown/images.html">
+            
+                <a href="../../markdown/images.html">
+            
+                    
+                    Images
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18.3" data-path="../../markdown/code.html">
+            
+                <a href="../../markdown/code.html">
+            
+                    
+                    Code Blocks
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18.4" data-path="../../markdown/tables.html">
+            
+                <a href="../../markdown/tables.html">
+            
+                    
+                    Tables
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19" data-path="../../Vim/setup.md">
+            
+                <span>
+            
+                    
+                    Vim
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.19.1" data-path="../../Vim/mappings.html">
+            
+                <a href="../../Vim/mappings.html">
+            
+                    
+                    Mappings
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19.2" data-path="../../Vim/anti-pattern.html">
+            
+                <a href="../../Vim/anti-pattern.html">
+            
+                    
+                    Vim Anti Patterns
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19.3" data-path="../../Vim/ack.html">
+            
+                <a href="../../Vim/ack.html">
+            
+                    
+                    ACK
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19.4" data-path="../../Vim/cheatsheet.html">
+            
+                <a href="../../Vim/cheatsheet.html">
+            
+                    
+                    Cheatsheet
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19.5" data-path="../../Vim/easymotion.html">
+            
+                <a href="../../Vim/easymotion.html">
+            
+                    
+                    EasyMotion
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19.6" data-path="../../Vim/insert-mode.html">
+            
+                <a href="../../Vim/insert-mode.html">
+            
+                    
+                    Insert Mode
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19.7" data-path="../../Vim/advanced.html">
+            
+                <a href="../../Vim/advanced.html">
+            
+                    
+                    Currently Learning Vim
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19.8" data-path="../../Vim/password-manager.html">
+            
+                <a href="../../Vim/password-manager.html">
+            
+                    
+                    Password manager
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19.9" data-path="../../Vim/vim-surround.html">
+            
+                <a href="../../Vim/vim-surround.html">
+            
+                    
+                    Vim Surround
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19.10" data-path="../../Vim/fugitive.html">
+            
+                <a href="../../Vim/fugitive.html">
+            
+                    
+                    Vim and Git
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19.11" data-path="../../Vim/gist.html">
+            
+                <a href="../../Vim/gist.html">
+            
+                    
+                    Vim Gist
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19.12" data-path="../../Vim/vim-tips.html">
+            
+                <a href="../../Vim/vim-tips.html">
+            
+                    
+                    Vim Tips
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19.13" data-path="../../Vim/macro.html">
+            
+                <a href="../../Vim/macro.html">
+            
+                    
+                    Vim Macro
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19.14" data-path="../../Vim/marks.html">
+            
+                <a href="../../Vim/marks.html">
+            
+                    
+                    Vim Marks
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19.15" data-path="../../Vim/gif/gif.html">
+            
+                <a href="../../Vim/gif/gif.html">
+            
+                    
+                    Gifs
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19.16" data-path="../../Personal/tmux-runner.html">
+            
+                <a href="../../Personal/tmux-runner.html">
+            
+                    
+                    Vim & Tmux
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20" data-path="../../Personal/shell.html">
+            
+                <a href="../../Personal/shell.html">
+            
+                    
+                    Shell
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.20.1" data-path="../../Personal/osx-keys.html">
+            
+                <a href="../../Personal/osx-keys.html">
+            
+                    
+                    OSX Keys
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20.2" data-path="../../Personal/zsh.html">
+            
+                <a href="../../Personal/zsh.html">
+            
+                    
+                    ZSH
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20.3" data-path="../../Personal/fzf.html">
+            
+                <a href="../../Personal/fzf.html">
+            
+                    
+                    FZF
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20.4" data-path="../../Personal/tmux.html">
+            
+                <a href="../../Personal/tmux.html">
+            
+                    
+                    Tmux
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.21" data-path="../../Personal/spotify-terminal.html">
+            
+                <a href="../../Personal/spotify-terminal.html">
+            
+                    
+                    Spotify Terminal
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.22" data-path="../../Personal/resize.html">
+            
+                <a href="../../Personal/resize.html">
+            
+                    
+                    Terminal size
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.23" data-path="../../Personal/chrome.html">
+            
+                <a href="../../Personal/chrome.html">
+            
+                    
+                    Make Chrome Great Again
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.24" data-path="../../Personal/quiet-facebook.html">
+            
+                <a href="../../Personal/quiet-facebook.html">
+            
+                    
+                    Spam Free Facebook
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.25" data-path="../../Personal/commandline.html">
+            
+                <a href="../../Personal/commandline.html">
+            
+                    
+                    Commandline Notes
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.26" data-path="../../Personal/gitmoji.html">
+            
+                <a href="../../Personal/gitmoji.html">
+            
+                    
+                    Git Commit Emoji
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.27" data-path="../../Personal/fzf.html">
+            
+                <a href="../../Personal/fzf.html">
+            
+                    
+                    FZF
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.28" data-path="../../Personal/osx-keys.html">
+            
+                <a href="../../Personal/osx-keys.html">
+            
+                    
+                    OSX Shortcuts
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.29" data-path="../../Personal/iterm.html">
+            
+                <a href="../../Personal/iterm.html">
+            
+                    
+                    Iterm/Terminal Shortcuts
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.30" data-path="../../Personal/chromecast.html">
+            
+                <a href="../../Personal/chromecast.html">
+            
+                    
+                    ChromeCast
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >Basic MongoDB</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="chapter-1---fuck-sql">Chapter 1 - Fuck SQL</h1>
+<ol>
+<li><p>MongoDB has the same concept of a <code>database</code> with which you are likely already familiar.</p>
+</li>
+<li><p>A database can have zero or more <code>collections</code>. A collection shares enough in common with a traditional <code>table</code> that you can safely think of the two as the same thing. <code>Collections = Table</code></p>
+</li>
+<li><p>Collections are made up of zero or more <code>documents</code>. Again, a document can safely be thought of as a <code>row</code>. <code>Documents = row</code></p>
+</li>
+<li><p>A document is made up of one or more <code>fields</code>, which you can probably guess are a lot like <code>columns</code>. <code>Field = Columns</code></p>
+</li>
+<li><p><code>Indexes</code> in MongoDB function mostly like regular indexes.</p>
+</li>
+<li><p><code>Cursors</code> are different than the other five concepts but they are important enough, and often overlooked, that I think they are worthy of their own discussion.  The important thing to understand about cursors is that when you ask MongoDB for data, it returns a pointer to the result set called a cursor, which we can do things to, such as counting or skipping ahead, before actually pulling down data.</p>
+</li>
+</ol>
+<p>To recap, MongoDB is made up of <code>databases</code> which contain <code>collections</code>. A <code>collection</code> is made up of <code>documents</code>. Each <code>document</code> is made up of <code>fields</code>. <code>Collections</code> can be <code>indexed</code>, which improves lookup and sorting performance. Finally, when we get data from MongoDB we do so through a <code>cursor</code> whose actual execution is delayed until necessary.</p>
+<pre><code>To start Mongo with a db defined. `Mongo database`
+To clear the terminal window use `cls` acts like clear
+</code></pre><h2 id="sql-vs-not-only-sql">SQL vs Not-Only-SQL</h2>
+<p>The core difference comes from the fact that relational databases define <code>columns</code> at the <code>table</code> level whereas a document-oriented database defines its <code>fields</code> at the <code>document</code> level. That is to say that each <code>document</code> within a <code>collection</code> can have its own unique set of <code>fields</code>.  As such, a <code>collection</code> is a dumbed down container in comparison to a <code>table</code>, while a <code>document</code> has a lot more information than a <code>row</code>.</p>
+<blockquote>
+<p>A collection acts as a container of data.</p>
+</blockquote>
+<p>Global commands - <code>help</code> or <code>exit</code>. Commands that you execute against the current database are executed against the <code>db</code> object, such as <code>db.help()</code> or <code>db.stats()</code>. Commands that you execute against a specific collection, which is what we&apos;ll be doing a lot of, are executed against the <code>db.COLLECTION_NAME</code> object, such as <code>db.hookers.help()</code> or <code>db.hookers.count()</code>.</p>
+<p>A small side note: Because this is a JavaScript shell, if you execute a method and omit the parentheses <code>()</code>, you&apos;ll see the method body rather than executing the method.</p>
+<p>First we&apos;ll use the global <code>use</code> helper to switch databases, so go ahead and enter <code>use learn</code>. It doesn&apos;t matter that the database doesn&apos;t really exist yet. The first collection that we create will also create the actual <code>learn</code> database. Now that you are inside a database, you can start issuing database commands, like <code>db.getCollectionNames()</code>. If you do so, you should get an empty array (<code>[ ]</code>). Since collections are schema-less, we don&apos;t explicitly need to create them. We can simply insert a document into a new collection. To do so, use the <code>insert</code> command, supplying it with the document to insert:</p>
+<pre><code>db.hookers.insert({name: &apos;Glitter&apos;,
+    gender: &apos;f&apos;, weight: 450})
+</code></pre><p>Result</p>
+<pre><code>{
+    &quot;_id&quot;: ObjectId(&quot;5744a91040765d171766294a&quot;),
+    &quot;name&quot;: &quot;Glitter&quot;,
+    &quot;gender&quot;: &quot;f&quot;,
+    &quot;weight&quot;: 450
+}
+</code></pre><p>The above line is executing <code>insert</code> against the <code>hooker</code> collection, passing it a single parameter. Internally MongoDB uses a binary serialized JSON format called BSON. Externally, this means that we use JSON a lot, as is the case with our parameters. If we execute <code>db.getCollectionNames()</code> now, we&apos;ll actually see two collections: <code>hookers</code> and <code>system.indexes</code>. The collection <code>system.indexes</code> is created once per database and contains the information on our database&apos;s indexes.</p>
+<p>You can now use the <code>find</code> command against <code>hookers</code> to return a list of documents:</p>
+<pre><code>db.unicorns.find()
+</code></pre><p>Notice that, in addition to the data you specified, there&apos;s an <code>_id</code> field. Every document must have a unique <code>_id</code> field. You can either generate one yourself or let MongoDB generate a value for you which has the type <code>ObjectId</code>. Most of the time you&apos;ll probably want to let MongoDB generate it for you. By default, the <code>_id</code> field is indexed - which explains why the <code>system.indexes</code> collection was created. You can look at <code>system.indexes</code>:</p>
+<pre><code>db.system.indexes.find()
+</code></pre><p>What you&apos;re seeing is the name of the index, the database and collection it was created against and the fields included in the index.</p>
+<p>Now, back to our discussion about schema-less collections. Insert a totally different document into <code>hookers</code>, such as:</p>
+<pre><code>db.hookers.insert({name: &apos;Starlight&apos;,
+    gender: &apos;f&apos;,
+    home: &apos;Amsterdam&apos;,
+    std: false})
+</code></pre><p>And, again use <code>find</code> to list the documents. Once we know a bit more, we&apos;ll discuss this interesting behavior of MongoDB, but hopefully you are starting to understand why the more traditional terminology wasn&apos;t a good fit.</p>
+<h2 id="mastering-selectors">Mastering Selectors</h2>
+<p>In addition to the six concepts we&apos;ve explored, there&apos;s one practical aspect of MongoDB you need to have a good grasp of before moving to more advanced topics: query selectors. A MongoDB query selector is like the <code>where</code> clause of an SQL statement. As such, you use it when finding, counting, updating and removing documents from collections. A selector is a JSON object, the simplest of which is <code>{}</code> which matches all documents. If we wanted to find all female hookers, we could use <code>{gender:&apos;f&apos;}</code>.</p>
+<p>Before delving too deeply into selectors, let&apos;s set up some data to play with. First, remove what we&apos;ve put so far in the <code>hookers</code> collection via: <code>db.hookers.remove({})</code>. Now, issue the following inserts to get some data we can play with (I suggest you copy and paste this):</p>
+<pre><code>db.hookers.insert({name: &apos;Horny&apos;,
+    dob: new Date(1992,2,13,7,47),
+    loves: [&apos;Sunshine,&apos;Watching TV&apos;],
+    weight: 600,
+    gender: &apos;f&apos;,
+    stds: 3});
+db.hookers.insert({name: &apos;Aurora&apos;,
+    dob: new Date(1991, 0, 24, 13, 0),
+    loves: [&apos;French&apos;, &apos;Grape fruits&apos;],
+    weight: 450,
+    gender: &apos;f&apos;,
+    stds: 7});
+db.hookers.insert({name: &apos;Laila&apos;,
+    dob: new Date(1973, 1, 9, 22, 10),
+    loves: [&apos;Anal&apos;, &apos;Redbull&apos;],
+    weight: 984,
+    gender: &apos;f&apos;,
+    stds: 82});
+</code></pre><p>Now that we have data, we can master selectors. <code>{field: value}</code> is used to find any documents where <code>field</code> is equal to <code>value</code>. <code>{field1: value1, field2: value2}</code> is how we do an <code>and</code> statement. The special <code>$lt</code>, <code>$lte</code>, <code>$gt</code>, <code>$gte</code> and <code>$ne</code> are used for less than, less than or equal, greater than, greater than or equal and not equal operations. For example, to get all male unicorns that weigh more than 700 pounds, we could do:</p>
+<pre><code>db.hookers.find({gender: &apos;f&apos;,
+    weight: {$gt: 700}})
+/// $ne - not equal
+/// $gte - greater than or equal
+db.hookers.find({gender: {$ne: &apos;m&apos;},
+    weight: {$gte: 701}})
+</code></pre><p>The <code>$exists</code> operator is used for matching the presence or absence of a field, for example:</p>
+<pre><code>db.hookers.find({
+    stds: {$exists: false}})
+</code></pre><p>should return a single document. The &apos;$in&apos; operator is used for matching one of several values that we pass as an array, for example:</p>
+<pre><code>db.hookers.find({
+    loves: {$in:[&apos;Anal,&apos;Redbull&apos;]}})
+</code></pre><p>If we want to OR rather than AND several conditions on different fields, we use the <code>$or</code> operator and assign to it an array of selectors we want or&apos;d:</p>
+<pre><code>db.hookers.find({gender: &apos;f&apos;,
+    $or: [{loves: &apos;Anal},
+          {weight: {$lt: 500}}]})
+</code></pre><p>The above will return all female hookers which either love Anal or weigh less than 500 pounds.</p>
+<p>There&apos;s something pretty neat going on in our last two examples. You might have already noticed, but the <code>loves</code> field is an array. MongoDB supports arrays as first class objects. This is an incredibly handy feature. Once you start using it, you wonder how you ever lived without it. What&apos;s more interesting is how easy selecting based on an array value is: <code>{loves: &apos;watermelon&apos;}</code> will return any document where <code>watermelon</code> is a value of <code>loves</code>.</p>
+<p>Too see more selectors <a href="http://docs.mongodb.org/manual/reference/operator/query/#query-selectors" target="_blank">Query Selectors</a>.</p>
+<p>We&apos;ve seen how these selectors can be used with the <code>find</code> command. They can also be used with the <code>remove</code> command which we&apos;ve briefly looked at, the <code>count</code> command, which we haven&apos;t looked at but you can probably figure out, and the <code>update</code> command which we&apos;ll spend more time with later on.</p>
+<p>The <code>ObjectId</code> which MongoDB generated for our <code>_id</code> field can be selected like so:</p>
+<pre><code>db.hookers.find(
+    {_id: ObjectId(&quot;TheObjectId&quot;)})
+</code></pre><h2 id="summary">Summary</h2>
+<p>We haven&apos;t looked at the <code>update</code> command yet, or some of the fancier things we can do with <code>find</code>. However, we did get MongoDB up and running, looked briefly at the <code>insert</code> and <code>remove</code> commands. We also introduced <code>find</code> and saw what MongoDB <code>selectors</code> were all about.</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="getting_started.html" class="navigation navigation-prev " aria-label="Previous page: MongoDB">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="chapter2.html" class="navigation navigation-next " aria-label="Next page: Updating - MongoDB">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Basic MongoDB","level":"1.6.2","depth":2,"next":{"title":"Updating - MongoDB","level":"1.6.3","depth":2,"path":"DB/NoSQL/chapter2.md","ref":"DB/NoSQL/chapter2.md","articles":[]},"previous":{"title":"MongoDB","level":"1.6.1","depth":2,"path":"DB/NoSQL/getting_started.md","ref":"DB/NoSQL/getting_started.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["gist"],"pluginsConfig":{"gist":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"DB/NoSQL/chapter1.md","mtime":"2016-12-30T11:26:03.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2017-08-16T07:50:17.052Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gist-embed/2.4/gist-embed.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-gist/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
