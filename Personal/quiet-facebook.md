@@ -10,5 +10,20 @@ I made a custom stylesheet to remove, all the unnecessary spam on there.
 
 Add the following CSS
 
-{% gist id="https://gist.github.com/mikejakobsen/f16ed71edfe94d44c7283e13dbec99a8" %}{% endgist %}
+```
+#pagelet_bookmark_nav, /* Left column: Bookmarks */
+a[href*="lists"], /* Left column: Lists like 'Close Friends' */
+  div[id*="ticker"], /* Right column / Chat sidebar: news ticker */
+  div[id*="pagelet_reminders"], /* Fødselsdagstingen */
+  div[id*="appsNav"], /* Gamesnav */
+  div[id*="pagelet_trending_tags_and_topics"] /* Right column: Trending tags and topics */
+{
+display: none !important;
+}
+
+/* News feed - Needs visibility:hidden to prevent endless refreshing */
+div[id*="topnews"] { 
+visibility: hidden !important;
+}
+```
 
