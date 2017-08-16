@@ -2,7 +2,7 @@
 
 WP CLI is a command line tool maintained by numerous experienced WordPress developers and core contributors. It's similar to Drupals Drush.
 
-{% gist id="https://gist.github.com/mikejakobsen/599e705a897c84174c3cbfb67fdb1f56" %}{% endgist %}
+https://gist.github.com/mikejakobsen/599e705a897c84174c3cbfb67fdb1f56
 
 ## Deploying a New Install
 
