@@ -1,9 +1,9 @@
-# Husk-det.nu
+# Husk-det.dk
 
 
 My personal notes
 
-Hosted at http://husk-det.nu
+Hosted at http://husk-det.dk
 
 ![Mike](assets/mike.png)
 
